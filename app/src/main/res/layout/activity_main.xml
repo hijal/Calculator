@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#b3b3ff"
+    android:gravity="center_horizontal"
+    android:padding="10sp"
+    android:layout_height="match_parent"
+    tools:context="com.example.sporsok.calculator.MainActivity">
+
+    <TextView
+        android:id="@+id/textViewForCal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Calculator"
+        android:textSize="31sp"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:textStyle="italic"
+        android:textColor="#ffb3b3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textViewForResult"
+            android:hint="Result"
+            android:textColorHint="@android:color/holo_orange_dark"
+            android:inputType="number"
+            android:textStyle="italic"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left">
+
+        <TextView
+            android:id="@+id/textViewFor1"
+            android:layout_width="95dp"
+            android:layout_height="32dp"
+            android:text="Num 1:"
+            android:textSize="27sp" />
+
+        <EditText
+            android:id="@+id/editTextForNum1"
+            android:hint="Enter The First Number"
+            android:inputType="number"
+            android:textStyle="italic"
+            android:textSize="25sp"
+            android:textColor="#f2f2f2"
+            android:gravity="left"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left">
+
+        <TextView
+            android:id="@+id/textViewFor2"
+            android:layout_width="95dp"
+            android:layout_height="32dp"
+            android:text="Num 2:"
+            android:textSize="27sp" />
+
+        <EditText
+            android:id="@+id/editTextForNum2"
+            android:hint="Enter The Second Number"
+            android:inputType="number"
+            android:gravity="left"
+            android:textSize="23sp"
+            android:textColor="#f2f2f2"
+            android:textStyle="italic"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="fill_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button_AC"
+            android:onClick="forAC"
+            android:text="AC"
+            android:background="@color/colorAccent"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:orientation="horizontal">
+
+        <Button
+            android:onClick="ForAddition"
+            android:id="@+id/button_Jog"
+            android:text="+"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:background="#00ff00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:onClick="ForSubtract"
+            android:id="@+id/button_Biyog"
+            android:gravity="center"
+            android:text="-"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:background="#ff0000"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:onClick="ForMultiplication"
+            android:id="@+id/button_Gun"
+            android:text="*"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:background="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:onClick="ForDivision"
+            android:id="@+id/button_Vag"
+            android:text="/"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:background="#66ff1a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    
+</LinearLayout>
